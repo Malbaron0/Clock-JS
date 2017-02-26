@@ -1,0 +1,49 @@
+html
+ background: #018DED
+ background-size: cover
+
+body
+ margin: 0
+ display: flex
+ flex: 1
+ min-height: 100vh
+ align-items: center
+ justify-content: center
+
+.clock
+ width: 300px
+ height: 300px
+ border: 15px solid white
+ border-radius: 50%
+ position: relative
+ padding: 10px 
+
+.clock-face
+ position: relative
+ height: 100%
+ width: 100%
+
+.hand
+ width: 50%
+ height: 6px
+ background: black
+ border-radius: 10px
+ position: absolute
+ top: 50%
+ transform-origin: 100% 
+ transform: rotate(90deg)
+ transition: all 0.05s
+ transition-timing-function: cubic-bezier(0, 1.29, 0.58, 1)
+
+.mid-circle
+ width: 30px
+ height: 30px
+ border-radius: 50%
+ position: absolute
+ top: 47%
+ left: 45%
+ z-index: 1
+ background-color: black
+
+.second-hand
+ background-color: white
